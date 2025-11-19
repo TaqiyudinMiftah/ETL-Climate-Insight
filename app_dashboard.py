@@ -1,7 +1,6 @@
 # app_dashboard.py (KODE FINAL DAN LENGKAP)
 import streamlit as st
 import pandas as pd
-from sqlalchemy import create_engine
 from dateutil.relativedelta import relativedelta
 import os
 import sqlite3
