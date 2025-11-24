@@ -1,0 +1,9 @@
+database:
+  path: "data/jakarta_climate.sqlite"
+
+paths:
+  raw_data: "raw_data"
+  processed_data: "data"
+
+dashboard:
+  title: "Jakarta Climate Dashboard"
