@@ -52,7 +52,7 @@ def run_pipeline_klhk():
         # 1. EXTRACT
         print(f"Membaca: {FILE_KLHK}")
         # Ingat! KLHK header ada di baris ke-2 (index 1)
-        df_raw = pd.read_csv(FILE_KLHK, header=1)
+        df_raw = pd.read_csv(FILE_KLHK)
 
         # 2. TRANSFORM
         df_clean = process_waste_data(df_raw)
