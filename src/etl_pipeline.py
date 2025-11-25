@@ -4,8 +4,8 @@ from pathlib import Path
 import pandas as pd
 import yaml
 
-from agregasi import process_waste_data
-from db_manager import load_to_postgres, create_table_if_not_exists
+from src.agregasi import process_waste_data
+from db.manager import load_to_postgres, create_table_if_not_exists
 
 
 # ------------------------------------------------------------
