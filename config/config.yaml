@@ -1,9 +1,23 @@
-database:
-  path: "data/jakarta_climate.sqlite"
+project:
+  name: "ETL-Climate-Insight"
 
 paths:
-  raw_data: "raw_data"
-  processed_data: "data"
+  raw_data_dir: "raw_data"
+  data_dir: "data"
+  jakarta_csv: "data_jakarta.csv"
+  klhk_csv: "data_klhk.csv"
+  aggregated_csv: "v_jakarta_trend_bulanan.csv"
 
-dashboard:
-  title: "Jakarta Climate Dashboard"
+database:
+  postgres:
+    enabled: true
+    user: "postgres"
+    password: "CHANGE_ME"
+    host: "localhost"
+    port: 5432
+    name: "waste_db"
+    target_table: "fact_sampah_harian"
+
+  sqlite:
+    file_name: "v_jakarta_trend_bulanan.sqlite"
+    table_name: "v_jakarta_trend_bulanan"
