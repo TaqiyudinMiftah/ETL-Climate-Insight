@@ -1,91 +1,168 @@
-# Jakarta Climate Data Pipeline
+# 🌎 ETL Climate Insight — Data Engineering Pipeline (Jakarta Waste & KLHK)
 
-This project is an end-to-end **Data Engineering pipeline** that performs ETL (Extract–Transform–Load) on rainfall and weather data from Jakarta, followed by automated data aggregation and an interactive dashboard built using Streamlit.
+ETL Climate Insight adalah project **end-to-end data engineering pipeline** berbasis Python yang melakukan proses **Extract → Transform → Load** terhadap data sampah Jakarta dan KLHK, menyimpannya ke database, serta menghasilkan dataset teragregasi untuk **visualisasi dashboard**.
 
-## 📌 Project Overview
+Project ini juga dilengkapi dengan **workflow orchestration menggunakan Apache Airflow**, sehingga seluruh pipeline dapat berjalan otomatis dan terjadwal.
 
-This repository contains:
+---
 
-* **ETL Pipeline** (`etl_pipeline.py`)
-  Extracts raw data, performs cleaning, transformation, and loads the processed data into SQLite.
+## 🚀 Fitur Utama
 
-* **Database Manager** (`db_manager.py`)
-  Helper module for database operations such as creating tables, inserting data, and managing connections.
+* **Extract** data dari dua sumber: data pengangkutan Jakarta & data KLHK.
+* **Transform** data menjadi dataset bersih, terstandardisasi, dan siap analisis.
+* **Load** hasil transform ke SQLite/Postgres.
+* **Pipeline otomatis** menggunakan Airflow dengan DAG yang modular.
+* **Dashboard Streamlit** untuk visualisasi tren volume sampah.
+* Struktur project yang rapi dan scalable dengan folder `src/` dan `config/`.
 
-* **Aggregation Script** (`agregasi.py`)
-  Processes the cleaned dataset into monthly/yearly trends and exports aggregated views.
+---
 
-* **Streamlit Dashboard** (`app_dashboard.py`)
-  Interactive visualization for rainfall trends in Jakarta using the processed data.
-
-* **SQLite Setup** (`setup_sqlite.py`)
-  Script to initialize database schema and load initial dataset.
-
-## 📁 Project Structure
+## 🏗️ Arsitektur Project
 
 ```
-ETL/
-│── agregasi.py
-│── app_dashboard.py
-│── db_manager.py
-│── etl_pipeline.py
-│── setup_sqlite.py
+ETL-Climate-Insight/
+│── airflow/               # Folder Airflow (DAGs, logs, plugins, docker-compose)
+│── config/
+│   └── config.yaml        # Konfigurasi path & database
+│── dashboard/
+│   └── app.py             # Dashboard Streamlit
+│── data/                  # Hasil ETL (CSV, SQLite)
+│── db/
+│   └── manager.py         # Helper DB
+│── raw_data/              # Raw dataset sumber
+│── src/
+│   ├── agregasi.py        # Modul transform & agregasi
+│   └── etl_pipeline.py    # ETL pipeline utama
+│── setup_sqlite.py        # Generate SQLite untuk dashboard
 │── requirements.txt
-│── raw_data/
-│── v_jakarta_trend_bulanan.csv
-│── v_jakarta_trend_bulanan.sqlite
-│── __pycache__/
-│── .git/
+│── README.md
 ```
 
-## ⚙️ Installation
+---
 
-Clone the repository and install dependencies:
+## ⚙️ Teknologi yang Digunakan
+
+* **Python 3.12**
+* **Pandas** — transformasi data
+* **SQLite / PostgreSQL** — penyimpanan data
+* **Streamlit** — dashboard visualisasi
+* **Apache Airflow** — workflow automation
+* **Docker + Docker Compose** untuk menjalankan Airflow
+
+---
+
+## 🔄 Alur ETL Pipeline
+
+### 1. **Extract**
+
+* Membaca `data_jakarta.csv` dan `data_klhk.csv` dari `raw_data/`.
+* Validasi keberadaan file dilakukan di Airflow.
+
+### 2. **Transform**
+
+* Pembersihan data
+* Normalisasi kolom
+* Agregasi volume per bulan per kecamatan
+* Pembuatan kolom standar (`bulan_tahun`, `kecamatan`, dll.)
+
+### 3. **Load**
+
+* Data disimpan ke Postgres untuk analitik
+* Data teragregasi disimpan ke SQLite untuk Streamlit
+
+---
+
+## 📊 Dashboard
+
+Dashboard Streamlit menyediakan visualisasi utama:
+
+* Tren total volume sampah per bulan
+* Per kecamatan
+* Distribusi sumber data
+* Heatmap waktu & wilayah
+* Insight otomatis (anomali & rekomendasi kebijakan)
+
+Menjalankan dashboard:
 
 ```bash
-git clone <your-repository>
-cd ETL
-pip install -r requirements.txt
+streamlit run dashboard/app.py
 ```
 
-## ▶️ Usage
+---
 
-### 1. Setup Database
+## ⏱️ Automasi Dengan Airflow
 
-```bash
+Project sudah include:
+
+* `airflow/docker-compose.yaml`
+* `airflow/dags/waste_etl_dag.py`
+
+DAG menjalankan:
+
+```
+check_raw_data_files
+    → run_etl_pipeline
+        → build_sqlite_for_dashboard
+            → pipeline_completed
+```
+
+### Menjalankan Airflow dengan Docker Compose
+
+```
+cd airflow
+docker compose up -d
+```
+
+Dashboard Airflow:
+
+```
+http://localhost:8081
+```
+
+---
+
+## 🧪 Menjalankan ETL Secara Manual (Opsional)
+
+```
+python -m src.etl_pipeline
 python setup_sqlite.py
 ```
 
-### 2. Run ETL Pipeline
+---
 
-```bash
-python etl_pipeline.py
+## 📦 Instalasi Dependensi
+
+```
+pip install -r requirements.txt
 ```
 
-### 3. Run Aggregation
+---
 
-```bash
-python agregasi.py
+## 🛠️ Konfigurasi Melalui `config.yaml`
+
+```yaml
+paths:
+  raw_data_dir: raw_data
+  data_dir: data
+  output_sqlite: data/v_jakarta_trend_bulanan.sqlite
+
+database:
+  sqlite:
+    file_name: v_jakarta_trend_bulanan.sqlite
+    table_name: v_jakarta_trend_bulanan
 ```
 
-### 4. Run Dashboard
+File ini mempermudah pemindahan lingkup folder tanpa mengubah kode.
 
-```bash
-streamlit run app_dashboard.py
-```
+---
 
-## 🧰 Requirements
+## 🔥 Rencana Pengembangan
 
-* Python 3.9+
-* SQLite database
-* Streamlit for dashboard
-* Pandas for data transformation
+* Tambah Data Quality Checks (DQ) otomatis
+* Integrasi API Jakarta langsung (bukan file CSV)
+* Tambah PostgreSQL connection pada Airflow UI
+* Auto-notifikasi pipeline via Telegram/email
+* Mode streaming data (real-time)
 
-## 📊 Dashboard Preview
-
-The Streamlit dashboard allows users to:
-
-* Visualize rainfall trends over months and years
-* Analyze aggregated metrics from the cleaned dataset
-* Interactively explore weather insights
+---
 
