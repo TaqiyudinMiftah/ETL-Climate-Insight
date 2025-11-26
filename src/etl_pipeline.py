@@ -11,7 +11,7 @@ from db.manager import load_to_postgres, create_table_if_not_exists
 # ------------------------------------------------------------
 # Load CONFIG & Path
 # ------------------------------------------------------------
-BASE_DIR = Path(__file__).resolve().parent.parent  # .../ETL-Climate-Insight
+BASE_DIR = Path(__file__).resolve().parent.parent  
 CONFIG_PATH = BASE_DIR / "config" / "config.yaml"
 
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
@@ -31,7 +31,7 @@ def run_pipeline_jakarta():
     try:
         # 1. EXTRACT
         print(f"Membaca: {FILE_JAKARTA}")
-        df_raw = pd.read_csv(FILE_JAKARTA)  # Header baris 0
+        df_raw = pd.read_csv(FILE_JAKARTA) 
 
         # 2. TRANSFORM
         df_clean = process_waste_data(df_raw)

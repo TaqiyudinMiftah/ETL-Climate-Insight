@@ -36,7 +36,7 @@ def process_waste_data(df_raw: pd.DataFrame) -> pd.DataFrame:
         "Kabupaten/Kota": "kecamatan",
         "Timbulan Sampah Harian(ton)": "volume",
 
-        # FORMAT LAIN (Jaga-jaga)
+        # FORMAT LAIN 
         "tanggal_laporan": "tanggal",
         "berat_sampah": "volume",
         "volume_sampah": "volume",

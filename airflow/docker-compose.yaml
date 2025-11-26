@@ -8,21 +8,16 @@ x-airflow-common:
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
-    AIRFLOW__CORE__FERNET_KEY: "please_change_me"
+    AIRFLOW__CORE__FERNET_KEY: "${FERNET_KEY}"
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
     AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
   volumes:
-    # Folder airflow lokal (dags/logs/plugins)
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-
-    # MOUNT ROOT PROJECT (satu level di atas folder airflow)
-    # Karena docker-compose ada di: ETL-Climate-Insight/airflow
-    # maka ".." adalah folder ETL-Climate-Insight
-    - "../:/opt/airflow/ETL-Climate-Insight"
+    - ../:/opt/airflow/ETL-Climate-Insight
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     postgres:
@@ -47,7 +42,7 @@ services:
     <<: *airflow-common
     command: webserver
     ports:
-      - "8080:8080"
+      - "127.0.0.1:8081:8080"
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
       interval: 10s
