@@ -1,103 +1,152 @@
-# 🌎 ETL Climate Insight — Data Engineering Pipeline (Jakarta Waste & KLHK)
+# 🌎 ETL Climate Insight — Complete Deployable Data Engineering Pipeline
 
-ETL Climate Insight adalah project **end-to-end data engineering pipeline** berbasis Python yang melakukan proses **Extract → Transform → Load** terhadap data sampah Jakarta dan KLHK, menyimpannya ke database, serta menghasilkan dataset teragregasi untuk **visualisasi dashboard**.
+ETL Climate Insight adalah project **end-to-end data engineering pipeline** yang memproses data sampah Jakarta & KLHK melalui pipeline **ETL (Extract → Transform → Load)**, menyimpannya ke database, mengorkestrasi workflow dengan **Apache Airflow**, dan menampilkan hasilnya pada **dashboard Streamlit**.
 
-Project ini juga dilengkapi dengan **workflow orchestration menggunakan Apache Airflow**, sehingga seluruh pipeline dapat berjalan otomatis dan terjadwal.
-
----
-
-## 🚀 Fitur Utama
-
-* **Extract** data dari dua sumber: data pengangkutan Jakarta & data KLHK.
-* **Transform** data menjadi dataset bersih, terstandardisasi, dan siap analisis.
-* **Load** hasil transform ke SQLite/Postgres.
-* **Pipeline otomatis** menggunakan Airflow dengan DAG yang modular.
-* **Dashboard Streamlit** untuk visualisasi tren volume sampah.
-* Struktur project yang rapi dan scalable dengan folder `src/` dan `config/`.
+README ini telah direvisi untuk mencakup **panduan lengkap setup `.env`, inisialisasi Airflow, menjalankan Docker Compose, serta menjalankan dashboard Streamlit**.
 
 ---
 
-## 🏗️ Arsitektur Project
+# 🚀 1. Setup Environment
+
+## 1.1 Install Dependencies
+
+Jalankan:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 🔧 2. Setup Airflow
+
+Airflow diletakkan pada folder `/airflow` dan dijalankan menggunakan Docker Compose.
+
+## 2.1 Buat file `.env`
+
+Buat file baru:
+
+```
+airflow/.env
+```
+
+Isi dengan:
+
+```env
+AIRFLOW_UID=50000
+FERNET_KEY=<isi-dengan-fernet-key-valid>
+```
+
+### Cara generate Fernet Key
+
+```bash
+python - <<EOF
+from cryptography.fernet import Fernet
+print(Fernet.generate_key().decode())
+EOF
+```
+
+Salin hasilnya ke `FERNET_KEY=`.
+
+---
+
+# 🐳 3. Menjalankan Airflow Menggunakan Docker Compose
+
+Masuk ke folder airflow:
+
+```bash
+cd airflow
+```
+
+## 3.1 Reset (opsional jika terjadi error)
+
+```bash
+docker compose down -v
+```
+
+## 3.2 Inisialisasi Database Airflow
+
+```bash
+docker compose run airflow-webserver airflow db init
+```
+
+## 3.3 Membuat User Admin
+
+```bash
+docker compose run airflow-webserver airflow users create \
+  --username admin \
+  --password admin \
+  --firstname Air \
+  --lastname Flow \
+  --role Admin \
+  --email admin@example.com
+```
+
+## 3.4 Jalankan Airflow
+
+```bash
+docker compose up -d
+```
+
+## 3.5 Akses UI Airflow
+
+```
+http://localhost:8081
+```
+
+Login:
+
+* **User:** admin
+* **Pass:** admin
+
+---
+
+# 📌 4. Struktur Project
 
 ```
 ETL-Climate-Insight/
-│── airflow/               # Folder Airflow (DAGs, logs, plugins, docker-compose)
+│── airflow/               # Airflow docker, dags, logs
 │── config/
-│   └── config.yaml        # Konfigurasi path & database
+│   └── config.yaml
 │── dashboard/
-│   └── app.py             # Dashboard Streamlit
-│── data/                  # Hasil ETL (CSV, SQLite)
+│   └── app.py             # Streamlit dashboard
+│── data/                  # Output ETL
 │── db/
-│   └── manager.py         # Helper DB
-│── raw_data/              # Raw dataset sumber
+│   └── manager.py
+│── raw_data/
 │── src/
-│   ├── agregasi.py        # Modul transform & agregasi
-│   └── etl_pipeline.py    # ETL pipeline utama
-│── setup_sqlite.py        # Generate SQLite untuk dashboard
+│   ├── agregasi.py
+│   └── etl_pipeline.py
+│── setup_sqlite.py
 │── requirements.txt
 │── README.md
 ```
 
 ---
 
-## ⚙️ Teknologi yang Digunakan
+# 🔄 5. Alur ETL Pipeline
 
-* **Python 3.12**
-* **Pandas** — transformasi data
-* **SQLite / PostgreSQL** — penyimpanan data
-* **Streamlit** — dashboard visualisasi
-* **Apache Airflow** — workflow automation
-* **Docker + Docker Compose** untuk menjalankan Airflow
+### 1. Extract
 
----
+* Membaca data dari `raw_data/`
+* Validasi file dilakukan oleh Airflow task `check_raw_data_files`
 
-## 🔄 Alur ETL Pipeline
+### 2. Transform
 
-### 1. **Extract**
-
-* Membaca `data_jakarta.csv` dan `data_klhk.csv` dari `raw_data/`.
-* Validasi keberadaan file dilakukan di Airflow.
-
-### 2. **Transform**
-
-* Pembersihan data
 * Normalisasi kolom
-* Agregasi volume per bulan per kecamatan
-* Pembuatan kolom standar (`bulan_tahun`, `kecamatan`, dll.)
+* Parsing tanggal
+* Agregasi volume bulanan per kecamatan
 
-### 3. **Load**
+### 3. Load
 
-* Data disimpan ke Postgres untuk analitik
-* Data teragregasi disimpan ke SQLite untuk Streamlit
-
----
-
-## 📊 Dashboard
-
-Dashboard Streamlit menyediakan visualisasi utama:
-
-* Tren total volume sampah per bulan
-* Per kecamatan
-* Distribusi sumber data
-* Heatmap waktu & wilayah
-* Insight otomatis (anomali & rekomendasi kebijakan)
-
-Menjalankan dashboard:
-
-```bash
-streamlit run dashboard/app.py
-```
+* Simpan ke SQLite untuk dashboard
+* Simpan ke Postgres untuk analitik (opsional)
 
 ---
 
-## ⏱️ Automasi Dengan Airflow
+# 🧠 6. Airflow DAG
 
-Project sudah include:
-
-* `airflow/docker-compose.yaml`
-* `airflow/dags/waste_etl_dag.py`
-
-DAG menjalankan:
+Pipeline otomatis via DAG:
 
 ```
 check_raw_data_files
@@ -106,39 +155,36 @@ check_raw_data_files
             → pipeline_completed
 ```
 
-### Menjalankan Airflow dengan Docker Compose
+DAG disimpan pada:
 
 ```
-cd airflow
-docker compose up -d
-```
-
-Dashboard Airflow:
-
-```
-http://localhost:8081
+airflow/dags/waste_etl_dag.py
 ```
 
 ---
 
-## 🧪 Menjalankan ETL Secara Manual (Opsional)
+# 📊 7. Menjalankan Dashboard Streamlit
 
+Pastikan ETL telah menghasilkan SQLite di folder `/data`.
+
+Jalankan dashboard:
+
+```bash
+streamlit run dashboard/app.py
 ```
-python -m src.etl_pipeline
-python setup_sqlite.py
-```
+
+Dashboard akan otomatis membaca SQLite dan menampilkan:
+
+* Tren total volume sampah
+* Tren per kecamatan
+* Heatmap waktu–wilayah
+* Insight otomatis (peak detection)
 
 ---
 
-## 📦 Instalasi Dependensi
+# ⚙️ 8. Konfigurasi Melalui `config.yaml`
 
-```
-pip install -r requirements.txt
-```
-
----
-
-## 🛠️ Konfigurasi Melalui `config.yaml`
+Contoh:
 
 ```yaml
 paths:
@@ -152,17 +198,15 @@ database:
     table_name: v_jakarta_trend_bulanan
 ```
 
-File ini mempermudah pemindahan lingkup folder tanpa mengubah kode.
-
 ---
 
-## 🔥 Rencana Pengembangan
+# 🔥 9. Rencana Pengembangan
 
-* Tambah Data Quality Checks (DQ) otomatis
-* Integrasi API Jakarta langsung (bukan file CSV)
-* Tambah PostgreSQL connection pada Airflow UI
-* Auto-notifikasi pipeline via Telegram/email
-* Mode streaming data (real-time)
+* Integrasi API Jakarta real-time
+* Tambah Data Quality Check
+* Airflow connection ke Postgres
+* Notifikasi Telegram
+* Mode streaming data
 
 ---
 
