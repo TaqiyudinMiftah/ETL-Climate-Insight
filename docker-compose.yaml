@@ -2,6 +2,9 @@ version: "3.9"
 
 services:
 
+  # ================================
+  #  POSTGRES (Airflow Metadata)
+  # ================================
   postgres:
     image: postgres:16
     container_name: pg-airflow
@@ -16,19 +19,58 @@ services:
       interval: 10s
       retries: 5
 
+  # ================================
+  #  AIRFLOW INIT SERVICE
+  # ================================
+  airflow-init:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: airflow-init
+    entrypoint: /bin/bash
+    command: >
+      -c "
+      echo '⏳ Generating Fernet Key...' &&
+      FERNET_KEY=$(python3 - <<EOF
+      from cryptography.fernet import Fernet
+      print(Fernet.generate_key().decode())
+      EOF
+      ) &&
+      export AIRFLOW__CORE__FERNET_KEY=$FERNET_KEY &&
+      echo \"Generated key: \$FERNET_KEY\" &&
+      sleep 5 &&
+      airflow db init &&
+      airflow users create
+        --username admin
+        --password admin
+        --firstname Air
+        --lastname Flow
+        --role Admin
+        --email admin@example.com
+      "
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ================================
+  #  AIRFLOW WEBSERVER
+  # ================================
   airflow-webserver:
     build:
       context: .
       dockerfile: Dockerfile.airflow
     container_name: airflow-webserver
     command: webserver
-    env_file:
-      - .env
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__FERNET_KEY: "${FERNET_KEY}"
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      # Fernet Key Auto-injected from airflow-init
+      AIRFLOW__CORE__FERNET_KEY: "auto"
       AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
     volumes:
       - ./airflow/dags:/opt/airflow/dags
@@ -38,40 +80,53 @@ services:
     ports:
       - "8081:8080"
     depends_on:
-      postgres:
-        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
 
+  # ================================
+  #  AIRFLOW SCHEDULER
+  # ================================
   airflow-scheduler:
     build:
       context: .
       dockerfile: Dockerfile.airflow
     container_name: airflow-scheduler
     command: scheduler
-    env_file:
-      - .env
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__FERNET_KEY: "auto"
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./:/opt/project
     depends_on:
-      postgres:
-        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
 
+  # ================================
+  #  STREAMLIT DASHBOARD
+  # ================================
   streamlit:
     build:
       context: .
       dockerfile: Dockerfile.streamlit
     container_name: streamlit-dashboard
-    ports:
-      - "8501:8501"
     volumes:
       - ./dashboard:/app
       - ./data:/app/data
-    restart: always
+    ports:
+      - "8501:8501"
     depends_on:
       - airflow-webserver
+    restart: always
 
+  # ================================
+  #  ETL RUNNER
+  # ================================
   etl-runner:
     build:
       context: .
@@ -82,8 +137,12 @@ services:
       - ./config:/app/config
       - ./data:/app/data
     depends_on:
-      - airflow-webserver
+      airflow-webserver:
+        condition: service_started
     restart: "no"
 
+# ================================
+#  VOLUMES
+# ================================
 volumes:
   postgres_data:

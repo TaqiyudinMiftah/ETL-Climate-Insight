@@ -7,6 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY src /app/src
 COPY config /app/config
-COPY setup_sqlite.py /app/
+COPY setup_sqlite.py /app
 
 CMD ["python", "-m", "src.etl_pipeline"]
