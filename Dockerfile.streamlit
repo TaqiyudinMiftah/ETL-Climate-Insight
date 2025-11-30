@@ -1,12 +1,12 @@
-FROM python:3.12-slim
+FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt && pip install streamlit
+COPY requirements.streamlit.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
-COPY dashboard /app/
+COPY dashboard /app/dashboard
+COPY data /app/data
 
 EXPOSE 8501
-
-CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+CMD ["streamlit", "run", "dashboard/app.py", "--server.address=0.0.0.0"]
