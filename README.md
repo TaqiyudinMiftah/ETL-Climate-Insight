@@ -127,8 +127,6 @@ docker compose version
 
 ### 3️⃣ Jalankan Semua Service
 
-Hanya dengan **1 perintah**:
-
 ```
 docker compose up -d --build
 ```
