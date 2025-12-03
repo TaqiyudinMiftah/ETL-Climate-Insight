@@ -18,7 +18,6 @@ Pipeline ini berjalan otomatis menggunakan DAG Airflow untuk melakukan proses:
 ---
 
 ## 📂 Struktur Folder
-
 ```
 ETL-Climate-Insight/
 │
