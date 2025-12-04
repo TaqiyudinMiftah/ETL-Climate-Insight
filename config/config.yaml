@@ -9,15 +9,6 @@ paths:
   aggregated_csv: "v_jakarta_trend_bulanan.csv"
 
 database:
-  postgres:
-    enabled: true
-    user: "postgres"
-    password: "CHANGE_ME"
-    host: "localhost"
-    port: 5432
-    name: "waste_db"
-    target_table: "fact_sampah_harian"
-
   sqlite:
-    file_name: "v_jakarta_trend_bulanan.sqlite"
-    table_name: "v_jakarta_trend_bulanan"
+    file_name: "climate_data.sqlite"
+    table_name: "fact_sampah_harian"

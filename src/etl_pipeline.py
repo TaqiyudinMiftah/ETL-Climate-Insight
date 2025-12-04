@@ -5,7 +5,7 @@ import pandas as pd
 import yaml
 
 from src.agregasi import process_waste_data
-from db.manager import load_to_postgres, create_table_if_not_exists
+from db.manager import load_to_database, create_table_if_not_exists
 
 
 # ------------------------------------------------------------
@@ -18,12 +18,12 @@ with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     CONFIG = yaml.safe_load(f)
 
 PATHS = CONFIG["paths"]
-PG_CONF = CONFIG["database"]["postgres"]
+DB_CONF = CONFIG["database"]["sqlite"]
 
 RAW_DIR = BASE_DIR / PATHS["raw_data_dir"]
 FILE_JAKARTA = RAW_DIR / PATHS["jakarta_csv"]
 FILE_KLHK = RAW_DIR / PATHS["klhk_csv"]
-TABLE_NAME = PG_CONF["target_table"]
+TABLE_NAME = DB_CONF["table_name"]
 
 
 def run_pipeline_jakarta():
@@ -38,7 +38,7 @@ def run_pipeline_jakarta():
         df_clean["sumber_data"] = "DKI Jakarta"
 
         # 3. LOAD
-        load_to_postgres(df_clean, TABLE_NAME)
+        load_to_database(df_clean, TABLE_NAME)
 
     except FileNotFoundError:
         print(f"File {FILE_JAKARTA} tidak ditemukan. Cek folder raw_data.")
@@ -59,7 +59,7 @@ def run_pipeline_klhk():
         df_clean["sumber_data"] = "KLHK - SIPSN"
 
         # 3. LOAD
-        load_to_postgres(df_clean, TABLE_NAME)
+        load_to_database(df_clean, TABLE_NAME)
 
     except FileNotFoundError:
         print(f"File {FILE_KLHK} tidak ditemukan. Cek folder raw_data.")
@@ -80,7 +80,7 @@ if __name__ == "__main__":
         try:
             create_table_if_not_exists(TABLE_NAME)
         except Exception as e:
-            print(f"Gagal membuat/cek tabel di Postgres: {e}")
+            print(f"Gagal membuat/cek tabel di database: {e}")
 
         # Jalankan Proses
         run_pipeline_jakarta()

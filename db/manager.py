@@ -15,44 +15,36 @@ CONFIG_PATH = BASE_DIR / "config" / "config.yaml"
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     CONFIG = yaml.safe_load(f)
 
-PG_CONF = CONFIG["database"]["postgres"]
+DB_CONF = CONFIG["database"]["sqlite"]
 
 
 def get_engine():
     """
-    Membuat koneksi engine SQLAlchemy ke PostgreSQL.
+    Membuat koneksi engine SQLAlchemy ke SQLite.
     Konfigurasi diambil dari config/config.yaml.
     """
-    if not PG_CONF.get("enabled", False):
-        raise RuntimeError(
-            "PostgreSQL belum diaktifkan. Set 'database.postgres.enabled: true' di config.yaml."
-        )
-
-    user = PG_CONF["user"]
-    password = PG_CONF["password"]
-    host = PG_CONF["host"]
-    port = PG_CONF["port"]
-    db_name = PG_CONF["name"]
-
-    connection_str = f"postgresql://{user}:{password}@{host}:{port}/{db_name}"
+    db_file = BASE_DIR / "data" / DB_CONF["file_name"]
+    db_file.parent.mkdir(parents=True, exist_ok=True)
+    connection_str = f"sqlite:///{db_file}"
     engine = create_engine(connection_str)
+    print(f"Menggunakan SQLite: {db_file}")
     return engine
 
 
 def create_table_if_not_exists(table_name: str | None = None) -> None:
     """
-    Membuat tabel fact_sampah_harian jika belum ada di database.
-    Nama tabel default diambil dari config.yaml (database.postgres.target_table).
+    Membuat tabel fact_sampah_harian jika belum ada di database SQLite.
+    Nama tabel default diambil dari config.yaml (database.sqlite.table_name).
     """
     if table_name is None:
-        table_name = PG_CONF["target_table"]
+        table_name = DB_CONF["table_name"]
 
     engine = get_engine()
 
     create_query = text(
         f"""
         CREATE TABLE IF NOT EXISTS {table_name} (
-            id SERIAL PRIMARY KEY,
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
             tanggal DATE,
             kecamatan VARCHAR(100),
             volume FLOAT,
@@ -63,22 +55,21 @@ def create_table_if_not_exists(table_name: str | None = None) -> None:
         """
     )
 
-    with engine.connect() as conn:
+    with engine.begin() as conn:
         conn.execute(create_query)
-        conn.commit()
         print(f"Tabel '{table_name}' siap digunakan.")
 
 
-def load_to_postgres(df: pd.DataFrame, table_name: str | None = None) -> None:
+def load_to_database(df: pd.DataFrame, table_name: str | None = None) -> None:
     """
-    Fungsi utama LOAD: Memasukkan DataFrame ke PostgreSQL.
+    Fungsi utama LOAD: Memasukkan DataFrame ke database SQLite.
     """
     if df.empty:
         print("Data kosong, tidak ada yang disimpan.")
         return
 
     if table_name is None:
-        table_name = PG_CONF["target_table"]
+        table_name = DB_CONF["table_name"]
 
     engine = get_engine()
 
@@ -88,7 +79,12 @@ def load_to_postgres(df: pd.DataFrame, table_name: str | None = None) -> None:
         # if_exists='append': Menambahkan data baru
         df.to_sql(table_name, engine, if_exists="append", index=False)
 
-        print("SUKSES: Data berhasil masuk ke PostgreSQL.")
+        print(f"SUKSES: Data berhasil masuk ke SQLite.")
 
     except Exception as e:
         print(f"ERROR Database: {e}")
+
+
+# Alias untuk backward compatibility
+load_to_postgres = load_to_database
+

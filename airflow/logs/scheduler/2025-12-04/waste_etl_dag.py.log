@@ -525,3 +525,10 @@ IndentationError: expected an indented block after 'with' statement on line 10
 [2025-12-04T12:53:38.743+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:38.743+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-12-04T12:53:38.756+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:38.756+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
 [2025-12-04T12:53:38.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.074 seconds
+[2025-12-04T12:54:08.984+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:54:08.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:54:08.986+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:54:08.986+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:54:09.000+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:54:09.016+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:54:09.016+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:54:09.032+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:54:09.031+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:54:09.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.082 seconds

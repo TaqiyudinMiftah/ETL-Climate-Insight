@@ -5,11 +5,18 @@ x-airflow-common: &airflow-common
   environment:
     AIRFLOW__CORE__EXECUTOR: SequentialExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+    PYTHONPATH: /app
   volumes:
     - airflow_db:/opt/airflow
     - ./airflow/dags:/opt/airflow/dags
     - ./airflow/logs:/opt/airflow/logs
     - ./airflow/plugins:/opt/airflow/plugins
+    - .:/app
+    - ./src:/app/src
+    - ./db:/app/db
+    - ./config:/app/config
+    - ./data:/app/data
+    - ./raw_data:/app/raw_data
 
 services:
   airflow-init:
