@@ -57,7 +57,7 @@ ETL-Climate-Insight/
 ├── requirements.airflow.txt      → Dependencies Airflow
 ├── requirements.etl.txt          → Dependencies ETL worker
 ├── requirements.streamlit.txt    → Dependencies Streamlit
-└── README.md                     → File ini
+└── README.md                     → Readme
 ```
 
 ---
