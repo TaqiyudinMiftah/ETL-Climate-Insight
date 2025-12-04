@@ -16,6 +16,5 @@ with DAG(
 
     run_etl = BashOperator(
         task_id="run_etl_scripts",
-        bash_command="python /app/src/main_etl.py",
-        cwd="/app"
+        bash_command="cd /app && python src/etl_pipeline.py"
     )

@@ -1,0 +1,527 @@
+[2025-12-04T12:18:32.012+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:18:32.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:18:32.017+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.017+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:18:32.073+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:18:32.459+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.458+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:climate_etl
+[2025-12-04T12:18:32.482+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.482+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:climate_etl
+[2025-12-04T12:18:32.501+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.501+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:climate_etl
+[2025-12-04T12:18:32.502+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.502+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:18:32.512+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.512+0000] {dag.py:3118} INFO - Creating ORM DAG for climate_etl
+[2025-12-04T12:18:32.521+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:18:32.521+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-03 00:00:00+00:00, run_after=2025-12-04 00:00:00+00:00
+[2025-12-04T12:18:32.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.684 seconds
+[2025-12-04T12:19:03.418+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:19:03.419+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:19:03.421+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:19:03.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:19:03.441+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:19:03.463+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:19:03.462+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:19:03.479+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:19:03.478+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-03 00:00:00+00:00, run_after=2025-12-04 00:00:00+00:00
+[2025-12-04T12:19:03.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.094 seconds
+[2025-12-04T12:19:43.786+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:19:43.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:19:43.789+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:19:43.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:19:43.820+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:19:43.828+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:19:43.828+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:19:43.846+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:19:43.846+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-03 00:00:00+00:00, run_after=2025-12-04 00:00:00+00:00
+[2025-12-04T12:19:43.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.092 seconds
+[2025-12-04T12:20:14.800+0000] {processor.py:161} INFO - Started process (PID=56) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:14.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:20:14.804+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:14.804+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:14.820+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:14.966+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:14.965+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:20:14.979+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:14.979+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:20:15.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.206 seconds
+[2025-12-04T12:20:45.980+0000] {processor.py:161} INFO - Started process (PID=96) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:45.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:20:45.983+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:45.982+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:45.998+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:46.016+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:46.015+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:20:46.029+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:46.029+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:20:46.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.077 seconds
+[2025-12-04T12:20:50.975+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:50.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:20:50.978+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:50.977+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:50.989+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:50.988+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/waste_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/waste_etl_dag.py", line 17
+    run_etl = BashOperator(
+    ^^^^^^^
+IndentationError: expected an indented block after 'with' statement on line 10
+[2025-12-04T12:20:50.989+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:51.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.040 seconds
+[2025-12-04T12:20:53.873+0000] {processor.py:161} INFO - Started process (PID=98) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:53.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:20:53.876+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:53.875+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:53.887+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:53.886+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/waste_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/waste_etl_dag.py", line 17
+    run_etl = BashOperator(
+    ^^^^^^^
+IndentationError: expected an indented block after 'with' statement on line 10
+[2025-12-04T12:20:53.887+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:53.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.040 seconds
+[2025-12-04T12:20:55.027+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:55.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:20:55.030+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:55.030+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:55.045+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:55.044+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/waste_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/waste_etl_dag.py", line 17
+    run_etl = BashOperator(
+    ^^^^^^^
+IndentationError: expected an indented block after 'with' statement on line 10
+[2025-12-04T12:20:55.046+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:55.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.044 seconds
+[2025-12-04T12:20:57.196+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:57.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:20:57.198+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:57.198+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:57.211+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:20:57.210+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/waste_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/waste_etl_dag.py", line 17
+    run_etl = BashOperator(
+    ^^^^^^^
+IndentationError: expected an indented block after 'with' statement on line 10
+[2025-12-04T12:20:57.211+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:20:57.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.041 seconds
+[2025-12-04T12:21:02.997+0000] {processor.py:161} INFO - Started process (PID=101) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:21:02.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:21:03.000+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:21:02.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:21:03.022+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:21:03.041+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:21:03.040+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:21:03.056+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:21:03.056+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:21:03.102+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.110 seconds
+[2025-12-04T12:21:33.491+0000] {processor.py:161} INFO - Started process (PID=102) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:21:33.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:21:33.494+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:21:33.493+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:21:33.511+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:21:33.532+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:21:33.532+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:21:33.549+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:21:33.549+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:21:33.578+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.092 seconds
+[2025-12-04T12:22:03.857+0000] {processor.py:161} INFO - Started process (PID=103) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:22:03.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:22:03.860+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:22:03.859+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:22:03.876+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:22:03.895+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:22:03.895+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:22:03.914+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:22:03.914+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:22:03.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.095 seconds
+[2025-12-04T12:22:34.232+0000] {processor.py:161} INFO - Started process (PID=104) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:22:34.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:22:34.235+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:22:34.235+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:22:34.249+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:22:34.266+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:22:34.265+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:22:34.282+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:22:34.281+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:22:34.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.087 seconds
+[2025-12-04T12:23:04.432+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:04.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:23:04.435+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:04.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:04.451+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:04.471+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:04.471+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:23:04.489+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:04.488+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:23:04.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.085 seconds
+[2025-12-04T12:23:32.283+0000] {processor.py:161} INFO - Started process (PID=106) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:32.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:23:32.285+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:32.285+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:32.307+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:32.325+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:32.324+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:23:32.340+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:32.340+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:23:32.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.087 seconds
+[2025-12-04T12:23:33.420+0000] {processor.py:161} INFO - Started process (PID=107) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:33.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:23:33.422+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:33.422+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:33.441+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:23:33.465+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:33.465+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:23:33.488+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:23:33.488+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:23:33.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.114 seconds
+[2025-12-04T12:24:04.381+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:24:04.382+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:24:04.384+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:24:04.383+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:24:04.400+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:24:04.418+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:24:04.418+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:24:04.432+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:24:04.432+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:24:04.457+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.081 seconds
+[2025-12-04T12:24:34.796+0000] {processor.py:161} INFO - Started process (PID=109) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:24:34.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:24:34.799+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:24:34.798+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:24:34.816+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:24:34.832+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:24:34.832+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:24:34.846+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:24:34.845+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:24:34.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.080 seconds
+[2025-12-04T12:25:04.994+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:25:04.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:25:04.997+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:25:04.997+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:25:05.014+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:25:05.033+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:25:05.032+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:25:05.048+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:25:05.048+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:25:05.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.081 seconds
+[2025-12-04T12:25:35.182+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:25:35.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:25:35.185+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:25:35.185+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:25:35.201+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:25:35.218+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:25:35.218+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:25:35.235+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:25:35.235+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:25:35.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.085 seconds
+[2025-12-04T12:26:05.311+0000] {processor.py:161} INFO - Started process (PID=112) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:26:05.312+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:26:05.313+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:26:05.313+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:26:05.333+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:26:05.351+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:26:05.351+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:26:05.368+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:26:05.368+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:26:05.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.081 seconds
+[2025-12-04T12:26:35.493+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:26:35.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:26:35.496+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:26:35.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:26:35.511+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:26:35.528+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:26:35.528+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:26:35.542+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:26:35.542+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:26:35.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.072 seconds
+[2025-12-04T12:27:05.697+0000] {processor.py:161} INFO - Started process (PID=114) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:05.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:27:05.699+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:05.699+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:05.715+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:05.733+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:05.732+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:27:05.746+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:05.746+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:27:05.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.072 seconds
+[2025-12-04T12:27:07.742+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:07.743+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:27:07.744+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:07.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:07.769+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:07.851+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:07.851+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:27:07.868+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:07.868+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:27:07.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.153 seconds
+[2025-12-04T12:27:11.043+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:11.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:27:11.046+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:11.046+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:11.072+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:11.078+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:11.078+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:27:11.093+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:11.093+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:27:11.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.076 seconds
+[2025-12-04T12:27:13.803+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:13.804+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:27:13.806+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:13.805+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:13.831+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:27:13.838+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:13.837+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:27:13.852+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:27:13.852+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:27:13.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.076 seconds
+[2025-12-04T12:28:02.553+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:28:02.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:28:02.557+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:28:02.556+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:28:02.594+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:28:02.602+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:28:02.602+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:28:02.622+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:28:02.621+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:28:02.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.100 seconds
+[2025-12-04T12:28:33.588+0000] {processor.py:161} INFO - Started process (PID=56) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:28:33.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:28:33.594+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:28:33.594+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:28:33.617+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:28:33.795+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:28:33.795+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:28:33.813+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:28:33.813+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:28:33.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.256 seconds
+[2025-12-04T12:29:04.663+0000] {processor.py:161} INFO - Started process (PID=57) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:29:04.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:29:04.666+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:29:04.666+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:29:04.685+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:29:04.708+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:29:04.708+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:29:04.727+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:29:04.727+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:29:04.748+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.091 seconds
+[2025-12-04T12:29:35.737+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:29:35.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:29:35.740+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:29:35.739+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:29:35.754+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:29:35.774+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:29:35.773+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:29:35.795+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:29:35.795+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:29:35.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.082 seconds
+[2025-12-04T12:30:06.033+0000] {processor.py:161} INFO - Started process (PID=59) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:30:06.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:30:06.035+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:30:06.035+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:30:06.053+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:30:06.075+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:30:06.075+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:30:06.093+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:30:06.093+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:30:06.112+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.084 seconds
+[2025-12-04T12:30:36.234+0000] {processor.py:161} INFO - Started process (PID=60) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:30:36.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:30:36.237+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:30:36.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:30:36.254+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:30:36.277+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:30:36.277+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:30:36.295+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:30:36.295+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:30:36.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.089 seconds
+[2025-12-04T12:31:06.433+0000] {processor.py:161} INFO - Started process (PID=61) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:31:06.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:31:06.436+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:31:06.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:31:06.451+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:31:06.469+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:31:06.469+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:31:06.496+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:31:06.496+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:31:06.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.090 seconds
+[2025-12-04T12:31:36.635+0000] {processor.py:161} INFO - Started process (PID=62) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:31:36.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:31:36.637+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:31:36.637+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:31:36.653+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:31:36.672+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:31:36.672+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:31:36.688+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:31:36.688+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:31:36.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.077 seconds
+[2025-12-04T12:32:06.834+0000] {processor.py:161} INFO - Started process (PID=63) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:32:06.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:32:06.838+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:32:06.837+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:32:06.856+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:32:06.875+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:32:06.875+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:32:06.893+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:32:06.893+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:32:06.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.086 seconds
+[2025-12-04T12:32:37.031+0000] {processor.py:161} INFO - Started process (PID=64) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:32:37.032+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:32:37.033+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:32:37.033+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:32:37.050+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:32:37.068+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:32:37.068+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:32:37.084+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:32:37.084+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:32:37.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.078 seconds
+[2025-12-04T12:33:07.210+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:33:07.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:33:07.213+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:33:07.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:33:07.232+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:33:07.249+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:33:07.248+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:33:07.264+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:33:07.264+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:33:07.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.077 seconds
+[2025-12-04T12:33:37.400+0000] {processor.py:161} INFO - Started process (PID=66) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:33:37.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:33:37.403+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:33:37.402+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:33:37.420+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:33:37.440+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:33:37.440+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:33:37.464+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:33:37.464+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:33:37.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.104 seconds
+[2025-12-04T12:34:07.744+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:07.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:34:07.751+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:07.750+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:07.781+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:07.818+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:07.818+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:34:07.846+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:07.846+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:34:07.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.145 seconds
+[2025-12-04T12:34:38.019+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:38.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:34:38.022+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:38.021+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:38.036+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:38.051+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:38.051+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:34:38.065+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:38.065+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:34:38.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.069 seconds
+[2025-12-04T12:34:53.746+0000] {processor.py:161} INFO - Started process (PID=69) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:53.747+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:34:53.749+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:53.748+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:53.773+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:34:53.861+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:53.861+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:34:53.879+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:34:53.879+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:34:53.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.161 seconds
+[2025-12-04T12:35:02.067+0000] {processor.py:161} INFO - Started process (PID=70) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:35:02.068+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:35:02.069+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:35:02.069+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:35:02.093+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:35:02.100+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:35:02.099+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:35:02.117+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:35:02.117+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:35:02.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.078 seconds
+[2025-12-04T12:35:37.648+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:35:37.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:35:37.651+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:35:37.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:35:37.679+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:35:37.687+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:35:37.687+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:35:37.715+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:35:37.715+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:35:37.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.119 seconds
+[2025-12-04T12:36:08.825+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:36:08.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:36:08.830+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:36:08.829+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:36:08.851+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:36:09.069+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:36:09.068+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:36:09.094+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:36:09.093+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:36:09.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.311 seconds
+[2025-12-04T12:36:40.206+0000] {processor.py:161} INFO - Started process (PID=31) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:36:40.207+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:36:40.210+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:36:40.209+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:36:40.231+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:36:40.257+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:36:40.257+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:36:40.278+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:36:40.278+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:36:40.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.107 seconds
+[2025-12-04T12:37:10.811+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:37:10.812+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:37:10.814+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:37:10.814+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:37:10.830+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:37:10.850+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:37:10.850+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:37:10.867+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:37:10.866+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:37:10.893+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.088 seconds
+[2025-12-04T12:37:41.921+0000] {processor.py:161} INFO - Started process (PID=59) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:37:41.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:37:41.925+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:37:41.925+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:37:41.946+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:37:41.976+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:37:41.976+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:37:42.000+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:37:42.000+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:37:42.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.123 seconds
+[2025-12-04T12:42:18.649+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:42:18.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:42:18.653+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:42:18.653+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:42:18.683+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:42:18.691+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:42:18.691+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:42:18.710+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:42:18.709+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:42:18.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.095 seconds
+[2025-12-04T12:42:49.787+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:42:49.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:42:49.790+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:42:49.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:42:49.808+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:42:49.970+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:42:49.970+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:42:49.987+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:42:49.986+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:42:50.016+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.236 seconds
+[2025-12-04T12:43:20.958+0000] {processor.py:161} INFO - Started process (PID=86) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:43:20.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:43:20.961+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:43:20.961+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:43:20.979+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:43:20.999+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:43:20.999+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:43:21.016+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:43:21.015+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:43:21.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.090 seconds
+[2025-12-04T12:43:51.288+0000] {processor.py:161} INFO - Started process (PID=93) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:43:51.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:43:51.291+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:43:51.291+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:43:51.309+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:43:51.332+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:43:51.332+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:43:51.351+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:43:51.351+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:43:51.373+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.093 seconds
+[2025-12-04T12:44:21.569+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:44:21.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:44:21.574+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:44:21.573+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:44:21.591+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:44:21.612+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:44:21.612+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:44:21.630+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:44:21.629+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:44:21.654+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.092 seconds
+[2025-12-04T12:44:51.843+0000] {processor.py:161} INFO - Started process (PID=118) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:44:51.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:44:51.846+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:44:51.846+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:44:51.867+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:44:51.894+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:44:51.894+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:44:51.913+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:44:51.913+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:44:51.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.107 seconds
+[2025-12-04T12:45:22.148+0000] {processor.py:161} INFO - Started process (PID=125) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:45:22.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:45:22.151+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:45:22.151+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:45:22.168+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:45:22.188+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:45:22.188+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:45:22.205+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:45:22.205+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:45:22.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.092 seconds
+[2025-12-04T12:45:52.444+0000] {processor.py:161} INFO - Started process (PID=126) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:45:52.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:45:52.445+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:45:52.445+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:45:52.462+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:45:52.481+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:45:52.481+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:45:52.498+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:45:52.498+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:45:52.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.085 seconds
+[2025-12-04T12:46:22.710+0000] {processor.py:161} INFO - Started process (PID=127) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:46:22.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:46:22.713+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:46:22.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:46:22.731+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:46:22.751+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:46:22.751+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:46:22.768+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:46:22.768+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:46:22.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.091 seconds
+[2025-12-04T12:46:52.983+0000] {processor.py:161} INFO - Started process (PID=128) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:46:52.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:46:52.985+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:46:52.985+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:46:53.001+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:46:53.020+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:46:53.020+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:46:53.037+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:46:53.037+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:46:53.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.087 seconds
+[2025-12-04T12:47:23.281+0000] {processor.py:161} INFO - Started process (PID=129) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:47:23.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:47:23.285+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:47:23.284+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:47:23.300+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:47:23.318+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:47:23.318+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:47:23.333+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:47:23.333+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:47:23.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.085 seconds
+[2025-12-04T12:48:34.560+0000] {processor.py:161} INFO - Started process (PID=29) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:48:34.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:48:34.564+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:48:34.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:48:34.601+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:48:34.609+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:48:34.609+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:48:34.630+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:48:34.630+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:48:34.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.110 seconds
+[2025-12-04T12:49:05.531+0000] {processor.py:161} INFO - Started process (PID=56) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:49:05.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:49:05.535+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:49:05.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:49:05.555+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:49:05.729+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:49:05.729+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:49:05.747+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:49:05.747+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:49:05.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.249 seconds
+[2025-12-04T12:49:36.198+0000] {processor.py:161} INFO - Started process (PID=100) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:49:36.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:49:36.200+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:49:36.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:49:36.215+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:49:36.239+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:49:36.239+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:49:36.257+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:49:36.257+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:49:36.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.092 seconds
+[2025-12-04T12:50:06.519+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:50:06.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:50:06.521+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:50:06.521+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:50:06.536+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:50:06.557+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:50:06.557+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:50:06.578+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:50:06.577+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:50:06.607+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.093 seconds
+[2025-12-04T12:50:36.763+0000] {processor.py:161} INFO - Started process (PID=116) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:50:36.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:50:36.765+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:50:36.764+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:50:36.781+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:50:36.798+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:50:36.798+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:50:36.812+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:50:36.812+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:50:36.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.078 seconds
+[2025-12-04T12:51:06.967+0000] {processor.py:161} INFO - Started process (PID=117) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:51:06.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:51:06.970+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:51:06.969+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:51:06.984+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:51:07.001+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:51:07.001+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:51:07.017+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:51:07.017+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:51:07.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.080 seconds
+[2025-12-04T12:51:37.196+0000] {processor.py:161} INFO - Started process (PID=118) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:51:37.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:51:37.198+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:51:37.198+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:51:37.215+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:51:37.234+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:51:37.233+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:51:37.251+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:51:37.250+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:51:37.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.085 seconds
+[2025-12-04T12:52:07.430+0000] {processor.py:161} INFO - Started process (PID=119) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:52:07.431+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:52:07.433+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:52:07.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:52:07.450+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:52:07.468+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:52:07.467+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:52:07.482+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:52:07.482+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:52:07.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.084 seconds
+[2025-12-04T12:52:37.636+0000] {processor.py:161} INFO - Started process (PID=120) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:52:37.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:52:37.640+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:52:37.639+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:52:37.661+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:52:37.680+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:52:37.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:52:37.695+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:52:37.695+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:52:37.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.185 seconds
+[2025-12-04T12:53:08.434+0000] {processor.py:161} INFO - Started process (PID=121) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:53:08.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:53:08.437+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:08.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:53:08.453+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:53:08.473+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:08.472+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:53:08.488+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:08.488+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:53:08.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.085 seconds
+[2025-12-04T12:53:38.711+0000] {processor.py:161} INFO - Started process (PID=122) to work on /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:53:38.712+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/waste_etl_dag.py for tasks to queue
+[2025-12-04T12:53:38.713+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:38.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:53:38.727+0000] {processor.py:840} INFO - DAG(s) 'climate_etl' retrieved from /opt/airflow/dags/waste_etl_dag.py
+[2025-12-04T12:53:38.743+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:38.743+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-12-04T12:53:38.756+0000] {logging_mixin.py:188} INFO - [2025-12-04T12:53:38.756+0000] {dag.py:3954} INFO - Setting next_dagrun for climate_etl to 2025-12-04 00:00:00+00:00, run_after=2025-12-05 00:00:00+00:00
+[2025-12-04T12:53:38.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/waste_etl_dag.py took 0.074 seconds

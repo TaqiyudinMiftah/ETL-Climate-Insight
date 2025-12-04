@@ -1,0 +1,28 @@
+[2025-12-04T12:20:10.866+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-04T12:20:10.883+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: climate_etl.run_etl_scripts manual__2025-12-04T12:20:04.906213+00:00 [queued]>
+[2025-12-04T12:20:10.887+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: climate_etl.run_etl_scripts manual__2025-12-04T12:20:04.906213+00:00 [queued]>
+[2025-12-04T12:20:10.888+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-04T12:20:10.958+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_etl_scripts> on 2025-12-04 12:20:04.906213+00:00
+[2025-12-04T12:20:10.961+0000] {standard_task_runner.py:63} INFO - Started process 55 to run task
+[2025-12-04T12:20:10.963+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'climate_etl', 'run_etl_scripts', 'manual__2025-12-04T12:20:04.906213+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/waste_etl_dag.py', '--cfg-path', '/tmp/tmpiieccc_q']
+[2025-12-04T12:20:10.965+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask run_etl_scripts
+[2025-12-04T12:20:11.091+0000] {task_command.py:426} INFO - Running <TaskInstance: climate_etl.run_etl_scripts manual__2025-12-04T12:20:04.906213+00:00 [running]> on host a9ce06b91e9e
+[2025-12-04T12:20:11.315+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='adn' AIRFLOW_CTX_DAG_ID='climate_etl' AIRFLOW_CTX_TASK_ID='run_etl_scripts' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T12:20:04.906213+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T12:20:04.906213+00:00'
+[2025-12-04T12:20:11.316+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-04T12:20:11.328+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-04T12:20:11.333+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 220, in execute
+    raise AirflowException(f"Can not find the cwd: {self.cwd}")
+airflow.exceptions.AirflowException: Can not find the cwd: /app
+[2025-12-04T12:20:11.336+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=climate_etl, task_id=run_etl_scripts, run_id=manual__2025-12-04T12:20:04.906213+00:00, execution_date=20251204T122004, start_date=20251204T122010, end_date=20251204T122011
+[2025-12-04T12:20:11.419+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4 for task run_etl_scripts (Can not find the cwd: /app; 55)
+[2025-12-04T12:20:11.459+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-12-04T12:20:11.522+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-04T12:20:11.523+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
