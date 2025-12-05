@@ -76,7 +76,6 @@ def load_to_database(df: pd.DataFrame, table_name: str | None = None) -> None:
     try:
         print(f"Menyimpan {len(df)} baris ke tabel '{table_name}'...")
 
-        # if_exists='append': Menambahkan data baru
         df.to_sql(table_name, engine, if_exists="append", index=False)
 
         print(f"SUKSES: Data berhasil masuk ke SQLite.")
