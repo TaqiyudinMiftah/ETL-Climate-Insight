@@ -6,10 +6,7 @@ import yaml
 from sqlalchemy import create_engine, text
 
 
-# ------------------------------------------------------------
-# Load CONFIG
-# ------------------------------------------------------------
-BASE_DIR = Path(__file__).resolve().parent.parent  # .../ETL-Climate-Insight
+BASE_DIR = Path(__file__).resolve().parent.parent  
 CONFIG_PATH = BASE_DIR / "config" / "config.yaml"
 
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:

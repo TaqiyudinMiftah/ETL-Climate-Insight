@@ -7,10 +7,6 @@ import yaml
 from src.agregasi import process_waste_data
 from db.manager import load_to_database, create_table_if_not_exists
 
-
-# ------------------------------------------------------------
-# Load CONFIG & Path
-# ------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent  
 CONFIG_PATH = BASE_DIR / "config" / "config.yaml"
 
@@ -50,8 +46,7 @@ def run_pipeline_klhk():
     print("\n--- [2/2] PIPELINE KLHK ---")
     try:
         # 1. EXTRACT
-        print(f"Membaca: {FILE_KLHK}")
-        # Ingat! KLHK header ada di baris ke-2 (index 1)
+        print(f"Membaca: {FILE_KLHK}")        
         df_raw = pd.read_csv(FILE_KLHK)
 
         # 2. TRANSFORM
@@ -69,20 +64,17 @@ def run_pipeline_klhk():
 
 if __name__ == "__main__":
     print("=== MEMULAI ETL WASTE TRACKER ===")
-
-    # Cek apakah folder raw_data ada
+    
     if not RAW_DIR.exists():
         print(f"Folder '{RAW_DIR}' belum ada. Membuat folder...")
         RAW_DIR.mkdir(parents=True, exist_ok=True)
         print("Silakan pindahkan file CSV Anda ke dalam folder 'raw_data' lalu jalankan ulang.")
-    else:
-        # Pastikan tabel sudah dibuat (bisa via script ini)
+    else:        
         try:
             create_table_if_not_exists(TABLE_NAME)
         except Exception as e:
             print(f"Gagal membuat/cek tabel di database: {e}")
-
-        # Jalankan Proses
+        
         run_pipeline_jakarta()
         run_pipeline_klhk()
 

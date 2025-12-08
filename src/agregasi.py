@@ -9,7 +9,7 @@ def clean_district_name(text):
     if not isinstance(text, str):
         return "Unknown"
     text = text.lower().strip()
-    # Hapus awalan seperti Kecamatan, Kab, Kota, Adm, dll.
+
     text = re.sub(r'kecamatan\s*|kec\.\s*|kabupaten\s*|kab\.\s*|kota\s*|adm\.\s*', '', text)
     return text.strip().title()
 
