@@ -439,7 +439,7 @@ Beberapa ide untuk pengembangan:
 
 ## 📄 Lisensi
 
-Project ini dibuat untuk keperluan pembelajaran dan portfolio.
+Project ini dibuat untuk keperluan pembelajaran dan portfolio
 
 ---
 
