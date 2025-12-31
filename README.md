@@ -447,6 +447,7 @@ Project ini dibuat untuk keperluan pembelajaran dan portfolio
 
 **Taqiyudin Miftah**
 - GitHub: [@TaqiyudinMiftah](https://github.com/TaqiyudinMiftah)
+- GitHub: [@Flax9](https://github.com/Flax9)
 
 ---
 
